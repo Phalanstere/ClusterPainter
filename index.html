@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>ClusterPainter</title>
+    <link rel="stylesheet" href="css/clusterPainter.css">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/q.js/1.4.0/q.js"></script>
+    
+    <link href='http://fonts.googleapis.com/css?family=Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+	<link href='http://fonts.googleapis.com/css?family=Oswald|Ubuntu+Mono' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600,700,300' rel='stylesheet' type='text/css'>
+ 	
+
+ 	<script src="lib/jquery2.1.minified.js"></script>
+ 	<script src="lib/jquery-ui.min.js"></script>
+
+ 	<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+ 	<script src="https://cdnjs.cloudflare.com/ajax/libs/q.js/1.1.0/q.js"></script>
+ 	
+ 	<script src="lib/clusterPainter.js"></script>    
+    
+    <script src="lib/clusterPainter.js"></script>
+  </head>
+  
+  
+  <script>
+  	
+  	var gesamt;
+  	
+  	$(document).ready(function(){
+   		"use strict";
+
+		var c = new ClusterPainter({
+								   source: "cluster.json",	
+								   frame: "standard",
+								   div: "scenery",
+								   });
+
+
+		$(".button").click(function(){
+			var id = parseInt($(this).attr("id"), 10) -1;
+			c.paint(id);
+		});
+
+
+
+
+	});
+
+  	
+  </script>
+  
+  
+  <body>
+  	<div id = "container">
+  		<div id = "1" class = "button">1</div>
+  		<div id = "2" class = "button">2</div>
+  		<div id = "3" class = "button">3</div>
+  		<div id = "4" class = "button">4</div>
+  		<div id = "5" class = "button">5</div>    		  		
+  	</div>
+  	<div id = "scenery"></div>
+
+
+  	
+    <!-- page content -->
+  </body>
+</html>
+    

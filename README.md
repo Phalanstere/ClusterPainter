@@ -1,23 +1,17 @@
 # ClusterPainter.js
 
-> Multiple-Choice QA System for JavaScript
+> A fast library to display image clusters 
 
 <img src="http://burckhardt.ludicmedia.de/ClusterPainter/Screenshot.png">
 
 ## Features:
 
-- **Versatile**: Several question types: *multiple choice*, *input fields*, *timed and untimed questions*
-- **Evaluation system**: Provide result scores and targeted feedback
-- **Animations**: customizable animations based on the performant [gsap](http://greensock.com/gsap) library
-- **Visual Editor**: create quizzes interactively using a visual frontend
-- **Markdown support**: implemented via [markdown-it](https://markdown-it.github.io/)
-- **Math support**: blazingly fast rendering via [KaTeX](http://khan.github.io/KaTeX/)
-- **Customizable Design**: change appearance of all elements via CSS
+- **Versatile**: usable in any given div 
+- **Fast**: the animations are based on the performant [gsap](http://greensock.com/gsap) library, therefore extremely fast
 
-## Getting Started
+#Demo(http://burckhardt.ludicmedia.de/ClusterPainter/)
 
-Create a quiz on on the [QAlity Frontend](http://burckhardt.ludicmedia.de/ClusterPainter/),
-grab the created JavaScript object and insert on your page via one of the following options.
+You can see the library in action
 
 ## Installation:
 
@@ -25,8 +19,9 @@ grab the created JavaScript object and insert on your page via one of the follow
 
 Include the following two lines in your `head` and you are ready to go:
 ```html
-<script src="https://cdn.rawgit.com/Planeshifter/qality.js/master/dist/QAreader.min.js"</script>
-<link href="https://cdn.rawgit.com/Planeshifter/qality.js/master/css/exam.css" media="screen" rel="stylesheet" type="text/css"/>
+ 	<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+ 	<script src="https://cdnjs.cloudflare.com/ajax/libs/q.js/1.1.0/q.js"></script>
+    <script src="lib/clusterPainter.js"></script>
 ```
 
 See the following minimal working example:

@@ -46,10 +46,22 @@ When all the files are loaded (via $(document).ready od body onload, you can cre
 								   });
 ```
 
-- the *source* parameter han hold a json file or an array of objects that hold the images
-- the *css_class* paramater refers to the style class that the images shall use
-- the *div* parameter allows makes the library operate in a given div
-- the *type* parameter specifies the animation type  
+- the **source** parameter may take a json file or an array of objects that hold the images. An object should look like this: 
+
+```html
+object
+	.time
+	.file
+
+```
+
+To make it easy youz can use the **<a href="https://github.com/Phalanstere/TimeCluster"</a>** libary to create the repective objects.
+
+
+
+- the **css_class** paramater refers to the style class that the images shall use
+- the **div** parameter allows makes the library operate in a given div
+- the **type** parameter specifies the animation type. Actually, **default** and **foto** are supported  
 
 
 ---

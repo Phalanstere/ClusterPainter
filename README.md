@@ -2,7 +2,7 @@
 
 > Multiple-Choice QA System for JavaScript
 
-<img src="http://burckhardt.ludicmedia.de/ClusterPainter/Screenshot.png>
+<img src="http://burckhardt.ludicmedia.de/ClusterPainter/Screenshot.png">
 
 ## Features:
 

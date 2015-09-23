@@ -40,6 +40,26 @@ height: auto;
 }
 
 
+.foto
+{
+position: absolute;
+top: 90px;
+left: -1900px;
+width: 600px;
+height: auto; 	
+border:solid 1px black;
+}
+
+.foto img
+{
+width: 100%;
+height: auto;	
+}
+
+
+
+
+
 .tilted
 {
 position: absolute;

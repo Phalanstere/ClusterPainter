@@ -1,28 +1,22 @@
 {
   "name": "cluster-painter",
+  "description": "paints image clusters dynamically",
   "version": "0.0.1",
-  "description": "\"paints image clusters and replaces them dynamically\"",
-  "main": "lib/index.js",
-  "directories": {
-    "test": "test"
-  },
-  "scripts": {
-    "test": "test_index.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Phalanstere/ClusterPainter.git"
-  },
-  "keywords": [
-    "cluster",
-    "image",
-    "paint",
-    "dynamic"
-  ],
-  "author": "phalanstere <burckhardt@ludicmedia.de> (https://github.com/Phalanstere)",
+  "author": "Phalanstere",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/Phalanstere/ClusterPainter/issues"
   },
-  "homepage": "https://github.com/Phalanstere/ClusterPainter#readme"
+  "dependencies": {
+   "time-cluster": "0.0.1",
+   "visual-data": "0.0.4"   
+  },
+  "main": "./lib",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Phalanstere/ClusterPainter.git"
+  },
+  "devDependencies": {
+  }
 }
+

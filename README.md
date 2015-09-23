@@ -55,7 +55,7 @@ object
 
 ```
 
-If you don't want to think about it you can use the **<a href="https://github.com/Phalanstere/TimeCluster">TimeCluster libary</a> which creates the necessary format.
+If you don't want to think about it you can use the <a href="https://github.com/Phalanstere/TimeCluster">**TimeCluster libary**</a> which creates the necessary format.
 
 
 - the **css_class** paramater refers to the style class that the images shall use

@@ -29,13 +29,13 @@ Include the following lines in your `head` and you are ready to go:
 
 #### npm
 
-very soon the library will support npm and browserify 
+Very soon the library will support npm and browserify 
 
 
 ## Usage:
 	
 
-When all the files are loaded (via $(document).ready od body onload, you can create a clusterPainter object, like this one:
+When all the files are loaded (via $(document).ready od body onload, you can create a **clusterPainter** object, like this:
   
 ```html
 		var c = new ClusterPainter({
@@ -55,7 +55,7 @@ object
 
 ```
 
-If you don't want to think about it you can use the <a href="https://github.com/Phalanstere/TimestampedVisuals">**VisualTimestamps libary**</a> which creates the necessary format.
+If you don't want to hassle with that, you can use the <a href="https://github.com/Phalanstere/TimestampedVisuals">**VisualTimestamps libary**</a> which creates the necessary format.
 
 
 - the **css_class** paramater refers to the style class that the images shall use

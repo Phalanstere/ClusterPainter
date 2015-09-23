@@ -9,142 +9,58 @@
 - **Versatile**: usable in any given div 
 - **Fast**: the animations are based on the performant [gsap](http://greensock.com/gsap) library, therefore extremely fast
 
-#Demo(http://burckhardt.ludicmedia.de/ClusterPainter/)
+##<a href="http://burckhardt.ludicmedia.de/ClusterPainter">Demo</a>##
 
-You can see the library in action
+<a href="http://burckhardt.ludicmedia.de/ClusterPainter">Here</a> You can see the library in action
 
 ## Installation:
 
 #### CDN
 
-Include the following two lines in your `head` and you are ready to go:
+Include the following lines in your `head` and you are ready to go:
 ```html
+ 	<script src="lib/jquery2.1.minified.js"></script>
+ 	<script src="lib/jquery-ui.min.js"></script>
  	<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
  	<script src="https://cdnjs.cloudflare.com/ajax/libs/q.js/1.1.0/q.js"></script>
     <script src="lib/clusterPainter.js"></script>
 ```
 
-See the following minimal working example:
-```html
-<!DOCTYPE html>
-<html>
-  <head>
-      <script src="https://cdn.rawgit.com/Planeshifter/qality.js/master/dist/QAreader.min.js"></script>
-      <link href="https://cdn.rawgit.com/Planeshifter/qality.js/master/css/exam.css" media="screen" rel="stylesheet" type="text/css"/>
-  </head>
-  <body>
-    <script>
-        new QAlity({"sequence":{"nodes":[{"id":0,"type":"input","question":"Who is the current president of the United States?","right_answer":"Barack Obama","transition_in":"dynamic","transition_out":"dynamic","points":1,"duration":"0","background":"none"}]},"evaluation":{"seperator":[{"start":0.33,"id":0},{"start":0.66,"id":1}],"sorted":[],"ranges":[{"id":0,"text":"RANGE 1","start":0,"end":0.33},{"id":1,"text":"RANGE 2","start":0.33,"end":0.66},{"id":2,"text":"RANGE 3","start":0.66,"end":1}]}},
-        {"div":"quizHolder"});
-    </script>
-    <div id = "quizHolder"></div>
-  </body>
-</html>
-```
-
-To render your own quiz, replace the first argument passed to the `QAlity` function.  
 
 #### npm
 
-```bash
-npm install qality
-```
+very soon the library will support npm and browserify 
 
-Use [browserify](https://github.com/substack/node-browserify) and render a quiz with only a few lines:
-
-```javascript
-var QAlity = require( 'qality' );
-
-new QAlity(<qa object>, {
-  "div":"<div to render to>"
-}, <optional callback>);
-```
-
-#### bower
-
-```
-bower install qality
-```
-
-Require the necessary files in your `index.html` document:
-
-```html
-<!DOCTYPE html>
-<html>
-  <head>
-    <!-- Load QA Reader, which exposes constructor function QAlity to the window object -->
-    <script src="bower_components/qality/dist/QAreader.min.js"></script>
-    <!-- Load the standard CSS or provide your own -->
-    <link href="bower_components/qality/css/exam.css" media="screen"
-      rel="stylesheet" type="text/css"/>
-  </head>
-  <body>
-    <!-- your code comes here -->
-  </body>
-</html>
-```
 
 ## Usage:
+	
 
-### Running the Editor
-
-A hosted version of the editor is accessible under the following link: [QAlity Frontend](http://qality.philipp-burckhardt.com/).
-
-<img src="http://burckhardt.ludicmedia.de/Quiz01.png">
-
-To run your own version, clone this repository and run
-
-```bash
-make build
+When all the files are loaded (via $(document).ready od body onload, you can create a clusterPainter object, like this one:
+  
+```html
+		var c = new ClusterPainter({
+								   source: "cluster.json",	
+								   css_class: "standard",
+								   div: "scenery",
+								   type: "default"
+								   });
 ```
 
-to compile the JavaScript necessary for running the frontend. The command
+- the *source* parameter han hold a json file or an array of objects that hold the images
+- the *css_class* paramater refers to the style class that the images shall use
+- the *div* parameter allows makes the library operate in a given div
+- the *type* parameter specifies the animation type  
 
-```bash
-make server
-```
-
-starts a server at port 8000 and should automatically open the frontend in a browser.
-
-### API
-
-## Tests:
-
-Run tests via the command `npm test`
 
 ---
 ### License
 
 [MIT](http://opensource.org/licenses/MIT)
 
-### Icon Credits
 
-- "Wrench" by Calvin Goodman
-- "Network" by José Campos
-- "Survey" by Ann Fandrey
-- "Close" by Mateo Zlatar
-- "Play" by Mike Rowe
-- "Add" by Vittorio Maria Vecchi
-- "Upload" by Thomas Le Bas
-- "Text" by Zyad Basheer
-- "Survey" by Icons8
-- "Marker" by Anton Gajdosik
-- "Box" by Arthur Schmitt
-
-[npm-image]: https://badge.fury.io/js/qality.svg
-[npm-url]: http://badge.fury.io/js/qality
-
-[bower-image]:  https://img.shields.io/bower/v/qality.svg
-[bower-url]: https://github.com/Planeshifter/qality.js.git
-
-[travis-image]: https://travis-ci.org/Planeshifter/qality.js.svg
-[travis-url]: https://travis-ci.org/Planeshifter/qality.js
-
-[dependencies-image]: http://img.shields.io/david/Planeshifter/qality.js.svg
-[dependencies-url]: https://david-dm.org/Planeshifter/qality.js
 
 ### Copyright
 
-Copyright &copy; 2015. Philipp Burckhardt.
+Copyright &copy; 2015. Phalanstere.
 
 

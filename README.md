@@ -62,7 +62,7 @@ Here is a typical html file
 
 ## Generating cluster data
 
-To generate a cluster file, create an image folder with the name **images**, place all your images therin and then run the following command
+To generate a cluster file, create an image folder with the name **images**, place all your images therein and then run the following command
 
 ```html
 	node create_cluster.js
@@ -74,7 +74,7 @@ var x = new TV({
                 path: "./images",             // here you have to pass the folder
                 filename: "cluster.json",     // **please leave this unchanged!**
                 callback: null,
-                timeframe: "day"             // valid entries are [minute][hour][day][week][month][year]
+                timeframe: "day"   // valid entries are [minute][hour][day][week][month][year]
                 });
 
 ```

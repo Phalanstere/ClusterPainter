@@ -1,8 +1,8 @@
 {
   "name": "cluster-painter",
-  "version": "0.0.3",
+  "version": "0.0.8",
   "description": "a fast library to display image clusters",
-  "main": "index.js",
+  "main": "npm_lib/clusterPainter.js",
   "directories": {
     "test": "test"
   },
@@ -12,7 +12,8 @@
     "visual-data": "0.0.4",
     "gsap": "^1.16.1",
     "jquery": "^2.1.3",
-    "jquery-ui": "^1.10.5" 
+    "jquery-ui": "^1.10.5",
+    "timestamped-visuals": "0.0.4" 
   },
   "devDependencies": {
     "browserify-css": "~0.7.1",

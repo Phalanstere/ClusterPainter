@@ -2,7 +2,6 @@
 
 > A fast library to display image clusters 
 
-<img src="http://burckhardt.ludicmedia.de/ClusterPainter/Screenshot.png">
 
 ## Features:
 
@@ -61,6 +60,22 @@ If you don't want to hassle with that, you can use the <a href="https://github.c
 - the **css_class** paramater refers to the style class that the images shall use
 - the **div** parameter allows makes the library operate in a given div
 - the **type** parameter specifies the animation type. Actually, **default** and **foto** are supported  
+
+
+<img src="http://burckhardt.ludicmedia.de/ClusterPainter/Screenshot.png">
+
+### default view
+
+<img src="http://burckhardt.ludicmedia.de/ClusterPainter/Screenshot2.png">
+
+### photographs
+
+
+<img src="http://burckhardt.ludicmedia.de/ClusterPainter/Screenshot3.png">
+
+### film
+
+
 
 
 ---

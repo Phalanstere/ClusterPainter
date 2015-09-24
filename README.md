@@ -10,7 +10,7 @@
 
 ##<a href="http://burckhardt.ludicmedia.de/ClusterPainter">Demo</a>##
 
-<a href="http://burckhardt.ludicmedia.de/ClusterPainter">Here</a> You can see the library in action
+<a href="http://burckhardt.ludicmedia.de/ClusterPainter">Here</a> you can see the library in action
 
 ## Installation:
 
@@ -62,18 +62,19 @@ If you don't want to hassle with that, you can use the <a href="https://github.c
 - the **type** parameter specifies the animation type. Actually, **default** and **foto** are supported  
 
 
+### default effect
 <img src="http://burckhardt.ludicmedia.de/ClusterPainter/Screenshot.png">
 
-### default view
 
+### photographs effect
 <img src="http://burckhardt.ludicmedia.de/ClusterPainter/Screenshot2.png">
 
-### photographs
 
 
+### filmstrip effect
 <img src="http://burckhardt.ludicmedia.de/ClusterPainter/Screenshot3.png">
 
-### film
+
 
 
 

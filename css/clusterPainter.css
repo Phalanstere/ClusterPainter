@@ -20,6 +20,37 @@ background: rgb(92,92,92);
 }
 
 
+#filmstage
+{
+position: absolute;
+top: 90px;
+height:644px;
+left: 0;
+width: 100%;
+background-color: rgb(32,32,32);
+z-index: 2;
+}
+
+#filmstill
+{
+position: absolute;
+top: 0;
+bottom: 0;
+left: 0;
+right: 0;
+margin: auto;
+width: 60%;
+height: 80%;
+}
+
+#filmstill img
+{
+width: 100%;
+height: auto;	
+box-shadow: 5px 5px 10px black;
+}
+
+
 .standard
 {
 position: absolute;
@@ -45,9 +76,10 @@ height: auto;
 position: absolute;
 top: 90px;
 left: -1900px;
-width: 600px;
+width: 320px;
 height: auto; 	
-border:solid 1px black;
+/* border:solid 4px black; */
+box-shadow: 0 0 6px black;
 }
 
 .foto img
@@ -57,6 +89,26 @@ height: auto;
 }
 
 
+.filmsnippet
+{
+position: absolute;
+left: 0;
+top: 0;
+height: 120px;
+width: auto;
+background-image: url("film_strip.png");
+background-size: auto 100%;
+border-right: solid 8px black;
+border-left: solid 8px black;
+background-position: 90%; 
+}
+
+.filmsnippet img
+{
+margin-top: 12%;	
+width: auto;
+height: 70%;	
+}
 
 
 
@@ -122,4 +174,14 @@ font-size: 1.2em;
 {
 background: darkcyan;	
 cursor: pointer;
+}
+
+
+#Types
+{
+margin-left: 100px;
+margin-top: 25px;
+font-family: "Inconsolata";
+font-size: 18px;
+background: darkgray;	
 }

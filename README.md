@@ -12,6 +12,7 @@
 
 <a href="http://burckhardt.ludicmedia.de/ClusterPainter">Here</a> you can see the library in action
 
+<img src="http://burckhardt.ludicmedia.de/ClusterPainter/Screenshot3.png">
 
 #### npm
 
@@ -68,7 +69,7 @@ To generate a cluster file, create an image folder with the name **images**, pla
 ```
 In case you want to use another folder name (or another timeframe), you have to modify the **create_cluster.js** file
 
-
+```html
 var x = new TV({
                 path: "./images",             // here you have to pass the folder
                 filename: "cluster.json",     // **please leave this unchanged!**
@@ -112,7 +113,7 @@ To get accomodated to the library I recommend using to embed the following snipp
 In the index.js (or whereever you want to require cluster-painter), you can invoke the **clusterPainter** object, like this:
   
 ```html
-		var c = new ClusterPainter({
+		var cluster = new ClusterPainter({
 								   source: "cluster.json",	
 								   css_class: "standard",
 								   div: "scenery",

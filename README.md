@@ -91,10 +91,11 @@ The only resource you have to embed manually is a link to the \*.css which is ne
     <link rel="stylesheet" href="node_modules/cluster-painter/css/clusterPainter.css">
 ```
 
-The basic idea is that you don't haver to worry about complex command, bust habe a super-simple api.
+The basic idea is that you have a super-simple api (and not have to worry how it works).
 
 
-To get accomodated to the library I recommend using to embed the following snippet to your htlm	 code
+However, it's nice if something is working right from the start. 
+To get accomodated to the library I recommend embedding the following snippet to your html code
 
 ```html
 
@@ -178,8 +179,6 @@ However, invoking the **clusterPainter** is easy, you just have to pass a paint 
 If you want to change the dislay type, you write:
 
 ```html
-   	**cluster.paint(id);***
-   	
    	cluster.paint[id]
 ```
 

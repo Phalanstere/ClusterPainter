@@ -3,7 +3,7 @@ var $               = require('jquery');
 var ClusterPainter  = require('./npm_lib/clusterPainter.js');
 
 
-    
+ /*   
     $(document).ready(function(){
         "use strict";
         var gesamt;
@@ -32,3 +32,5 @@ var ClusterPainter  = require('./npm_lib/clusterPainter.js');
         
 
     });
+    
+*/

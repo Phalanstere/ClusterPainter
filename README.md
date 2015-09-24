@@ -81,10 +81,10 @@ var x = new TV({
 
 ```
 
-If you have followed these instructions, yo are read to go.
+If you have followed these instructions, you are read to go.
 
  
-## Usage:
+## Usage: Creating a ClusterPainter object
 	
 
 When all the files are loaded (via **$(document).ready** or **body onload**, you can create a **clusterPainter** object, like this:

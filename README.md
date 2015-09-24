@@ -161,7 +161,7 @@ However, invoking the **clusterPainter** is easy, you just have to pass a paint 
 			 
 	         $(".button").click(function(){
 	            var id = parseInt($(this).attr("id"), 10) -1;
-	            **cluster.paint(id);***
+	            cluster.paint(id);
 	        });
 	        
 	        $("#Types").change(function(){

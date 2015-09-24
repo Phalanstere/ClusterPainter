@@ -12,7 +12,55 @@
 
 <a href="http://burckhardt.ludicmedia.de/ClusterPainter">Here</a> you can see the library in action
 
-## Installation:
+
+#### npm
+
+```html
+	npm install cluster-painter
+```
+
+
+Embed the libary: 
+
+```html
+	var ClusterPainter = require("cluster-painter")
+```
+
+
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>ClusterPainter</title>
+ 	
+ 	<script src="node_modules/npm_lib/bundle.min.js"></script>
+ 	
+  </head>
+  
+  <body>
+  	<div id = "container">
+  		<div id = "1" class = "button">1</div>
+  		<div id = "2" class = "button">2</div>
+  		<div id = "3" class = "button">3</div>
+  		<div id = "4" class = "button">4</div>
+  		<div id = "5" class = "button">5</div>    		
+  		
+  		<select id = "Types" class="select">
+    		<option selected>Select</option>
+    			<option selected>default</option>
+    			<option >foto</option>
+    			<option>film</option>
+		</select>		  		
+  	</div>
+  	<div id = "scenery"></div>
+  </body>
+</html>
+```
+
+
+## Installating conventionally:
 
 #### CDN
 
@@ -24,17 +72,13 @@ Include the following lines in your `head` and you are ready to go:
  	<script src="https://cdnjs.cloudflare.com/ajax/libs/q.js/1.1.0/q.js"></script>
     <script src="lib/clusterPainter.js"></script>
 ```
-
-
-#### npm
-
-Very soon the library will support npm and browserify 
+You find a working index.html in the main directory
 
 
 ## Usage:
 	
 
-When all the files are loaded (via $(document).ready od body onload, you can create a **clusterPainter** object, like this:
+When all the files are loaded (via **$(document).ready** or **body onload**, you can create a **clusterPainter** object, like this:
   
 ```html
 		var c = new ClusterPainter({

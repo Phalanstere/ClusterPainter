@@ -36,7 +36,7 @@ Here is a typical html file
     <meta charset="utf-8">
     <title>ClusterPainter</title>
 
-    <script src="node_modules/cluster-painter/npm_lib/bundle.min.js"></script>
+	<link rel="stylesheet" href="node_modules/cluster-painter/css/clusterPainter.css">
 
   </head>
 
@@ -83,11 +83,16 @@ If you have followed these instructions, you have prepared your image data suffi
 
 ## Working with the npm version
 
-The only resource you have to embed is a link to the \*.css which is necessary for a decent visual result
+The library is optimized for a **browserified** client side use. So you can use the handy **require** result instead adding resources to your html file. 
+
+The only resource you have to embed manually is a link to the \*.css which is necessary for a decent visual result
 
 ```html
     <link rel="stylesheet" href="node_modules/cluster-painter/css/clusterPainter.css">
 ```
+
+The basic idea is that you don't haver to worry about complex command, bust habe a super-simple api.
+
 
 To get accomodated to the library I recommend using to embed the following snippet to your htlm	 code
 
@@ -121,10 +126,10 @@ In the index.js (or whereever you want to require cluster-painter), you can invo
 								   });
 ```
 
-- the **source** parameter may take the json file you have created with the first step.
-- the **css_class** paramater refers to the style class that the images shall use
-- the **div** parameter allows makes the library operate in a given div
-- the **type** parameter specifies the animation type. Actually, **default** and **foto** are supported   
+- the **source** parameter takes the json file you have created with the first step.
+- the **css_class** paramater refers to the style class that the images shall use 
+- the **div** parameter allows the library to operate in a given div
+- the **type** parameter specifies the animation type. Actually, **default**, **foto** and **film** are supported   
 
 
 The full code of the index.js, file could look like this. Here the interaction part is added which fits to the supposed html-code.
@@ -180,9 +185,6 @@ If you want to change the dislay type, you write:
 
 
 
-
-
-
 ### default effect
 <img src="http://burckhardt.ludicmedia.de/ClusterPainter/Screenshot.png">
 
@@ -213,6 +215,8 @@ Include the following lines in your `head` and you are ready to go:
 You find a working index.html in the main directory
 
 
+Bascally everythings works as mentioned above. 
+ 
 
 
 

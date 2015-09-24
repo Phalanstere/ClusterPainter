@@ -61,12 +61,12 @@ Here is a typical html file
 
 ## Generating cluster data
 
-To generate a cluster file, create an image folder with the name **images** and run the following command
+To generate a cluster file, create an image folder with the name **images**, place all your images therin and then run the following command
 
 ```html
 	node create_cluster.js
 ```
-In case you want to use another folder name, you have to modify the **create_cluster.js** file
+In case you want to use another folder name (or another timeframe), you have to modify the **create_cluster.js** file
 
 Here's the content:
 
@@ -84,25 +84,6 @@ var x = new TV({
 If you have followed these instructions, yo are read to go.
 
  
-
-
-
-
-## Installating conventionally:
-
-#### CDN
-
-Include the following lines in your `head` and you are ready to go:
-```html
- 	<script src="lib/jquery2.1.minified.js"></script>
- 	<script src="lib/jquery-ui.min.js"></script>
- 	<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
- 	<script src="https://cdnjs.cloudflare.com/ajax/libs/q.js/1.1.0/q.js"></script>
-    <script src="lib/clusterPainter.js"></script>
-```
-You find a working index.html in the main directory
-
-
 ## Usage:
 	
 
@@ -146,6 +127,25 @@ If you don't want to hassle with that, you can use the <a href="https://github.c
 
 ### filmstrip effect
 <img src="http://burckhardt.ludicmedia.de/ClusterPainter/Screenshot3.png">
+
+
+
+
+## Installating conventionally:
+
+#### CDN
+
+Include the following lines in your `head` and you are ready to go:
+```html
+ 	<script src="lib/jquery2.1.minified.js"></script>
+ 	<script src="lib/jquery-ui.min.js"></script>
+ 	<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+ 	<script src="https://cdnjs.cloudflare.com/ajax/libs/q.js/1.1.0/q.js"></script>
+    <script src="lib/clusterPainter.js"></script>
+```
+You find a working index.html in the main directory
+
+
 
 
 

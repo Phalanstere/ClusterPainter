@@ -68,9 +68,6 @@ To generate a cluster file, create an image folder with the name **images**, pla
 ```
 In case you want to use another folder name (or another timeframe), you have to modify the **create_cluster.js** file
 
-Here's the content:
-
-```html
 
 var x = new TV({
                 path: "./images",             // here you have to pass the folder
@@ -81,13 +78,38 @@ var x = new TV({
 
 ```
 
-If you have followed these instructions, you are read to go.
+If you have followed these instructions, you have prepared your image data sufficiently. 
 
- 
-## Usage: Creating a ClusterPainter object
-	
+## Working with the npm version
 
-When all the files are loaded (via **$(document).ready** or **body onload**, you can create a **clusterPainter** object, like this:
+The only resource you have to embed is a link to the \*.css which is necessary for a decent visual result
+
+```html
+    <link rel="stylesheet" href="node_modules/cluster-painter/css/clusterPainter.css">
+```
+
+To get accomodated to the library I recommend using to embed the following snippet to your htlm	 code
+
+```html
+
+  		<div id = "1" class = "button">1</div>
+  		<div id = "2" class = "button">2</div>
+  		<div id = "3" class = "button">3</div>
+  		<div id = "4" class = "button">4</div>
+  		<div id = "5" class = "button">5</div>    		
+  		
+  		<select id = "Types" class="select">
+    		<option selected>Select</option>
+    			<option selected>default</option>
+    			<option >foto</option>
+    			<option>film</option>
+		</select>
+  		  		
+  	</div>
+  	<div id = "scenery"></div>
+```
+
+In the index.js (or whereever you want to require cluster-painter), you can invoke the **clusterPainter** object, like this:
   
 ```html
 		var c = new ClusterPainter({
@@ -98,22 +120,66 @@ When all the files are loaded (via **$(document).ready** or **body onload**, you
 								   });
 ```
 
-- the **source** parameter may take a json file or an array of objects that hold the images. An object should look like this: 
-
-```html
-
-object
-	.time
-	.file
-
-```
-
-If you don't want to hassle with that, you can use the <a href="https://github.com/Phalanstere/TimestampedVisuals">**VisualTimestamps libary**</a> which creates the necessary format.
-
-
+- the **source** parameter may take the json file you have created with the first step.
 - the **css_class** paramater refers to the style class that the images shall use
 - the **div** parameter allows makes the library operate in a given div
-- the **type** parameter specifies the animation type. Actually, **default** and **foto** are supported  
+- the **type** parameter specifies the animation type. Actually, **default** and **foto** are supported   
+
+
+The full code of the index.js, file could look like this. Here the interaction part is added which fits to the supposed html-code.
+However, invoking the **clusterPainter** is easy, you just have to pass a paint command and then the id of the image cluster
+
+ 
+```html 
+	/*jslint vars: true, plusplus: true, devel: true, nomen: true, indent: 4, maxerr: 50 */ /*global define */
+	var $               = require('jquery');
+	var ClusterPainter  = require('cluster-painter');
+	
+	
+	  
+	    $(document).ready(function(){
+	        "use strict";
+	
+	
+	        var cluster = new ClusterPainter({
+	                                   source: "cluster.json",  
+	                                   css_class: "standard",
+	                                   div: "scenery",
+	                                   type: "foto"
+	                                   });
+	
+	
+	      
+	
+			 
+	         $(".button").click(function(){
+	            var id = parseInt($(this).attr("id"), 10) -1;
+	            **cluster.paint(id);***
+	        });
+	        
+	        $("#Types").change(function(){
+	            
+	            var v = $(this).val();
+	            cluster.set_type(v);
+	        });
+	        
+	
+	    });
+	
+	});
+```
+
+If you want to change the dislay type, you write:
+
+```html
+   	**cluster.paint(id);***
+   	
+   	cluster.paint[id]
+```
+
+
+
+
 
 
 ### default effect

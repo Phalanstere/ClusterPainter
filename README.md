@@ -83,7 +83,7 @@ If you have followed these instructions, you have prepared your image data suffi
 
 ## Working with the npm version
 
-The library is optimized for a **browserified** client side use. So you can use the handy **require** result instead adding resources to your html file. 
+The library is optimized for a **browserified** client side use. So you can use the handy **require** call instead adding resources to your html file. 
 
 The only resource you have to embed manually is a link to the \*.css which is necessary for a decent visual result
 

@@ -118,7 +118,7 @@ To get accomodated to the library I recommend embedding the following snippet to
 
 In the index.js (or whereever you want to require cluster-painter), you can invoke the **clusterPainter** object, like this:
   
-```html
+```js
 		var cluster = new ClusterPainter({
 								   source: "cluster.json",	
 								   css_class: "standard",

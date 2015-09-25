@@ -23,7 +23,7 @@
 
 Embed the libary: 
 
-```html
+```javascript
 	var ClusterPainter = require("cluster-painter")
 ```
 
@@ -69,7 +69,7 @@ To generate a cluster file, create an image folder with the name **images**, pla
 ```
 In case you want to use another folder name (or another timeframe), you have to modify the **create_cluster.js** file
 
-```html
+```javascript
 var x = new TV({
                 path: "./images",             // here you have to pass the folder
                 filename: "cluster.json",     // **please leave this unchanged!**

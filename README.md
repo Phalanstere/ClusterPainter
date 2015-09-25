@@ -65,7 +65,7 @@ Here is a typical html file
 To generate a cluster file, create an image folder with the name **images**, place all your images therein and then run the following command
 
 ```html
-	node create_cluster.js
+	node node_modules/cluster-painter/create_cluster.js
 ```
 In case you want to use another folder name (or another timeframe), you have to modify the **create_cluster.js** file
 

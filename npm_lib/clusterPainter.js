@@ -521,21 +521,11 @@ this.position_film = function(job) {
         top = ((imgSize.height+offsetY) *vct) + offsetY; 
         hct ++;
         }
-      
-    e = {
-        div: job.img.id,
-        duration: 0,
-        left: self.outside_screen("horizontal"),
-        top: self.outside_screen("vertical"),
-        };      
-   
-    self.greensock_event(e);  
-   
-    // now the animation    
+
    
     e1 = {
         div: job.img.id,
-        duration: 1000,
+        duration: 0,
         width: imgSize.width,
         opacity: 0,
         left: left,
@@ -545,20 +535,12 @@ this.position_film = function(job) {
         delay: Math.random() * 1400,
         };        
 
-  
-   $("#" + job.img.id).attr("l", left); 
-   $("#" + job.img.id).attr("t", top);  
-   $("#" + job.img.id).attr("h", imgSize.width/ratio);     
-   $("#" + job.img.id).attr("w", imgSize.width);     
-  
-   var data = self.greensock_data([e1]);                
-    
-   // here I return the animation
-   return data;
-    
-    
-    
+   self.greensock_event(e1);   
+     
+   return null; 
+     
  };
+ 
 
 this.position_carousel = function(job) {
      var e;

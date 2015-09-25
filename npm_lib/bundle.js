@@ -9,7 +9,7 @@ var $               = require('jquery');
 var ClusterPainter  = require('./npm_lib/clusterPainter.js');
 
 
-    
+ /*   
     $(document).ready(function(){
         "use strict";
         var gesamt;
@@ -38,6 +38,8 @@ var ClusterPainter  = require('./npm_lib/clusterPainter.js');
         
 
     });
+    
+*/
 },{"./npm_lib/clusterPainter.js":9,"jquery":7}],4:[function(require,module,exports){
 'use strict';
 // For more information about browser field, check out the browser field at https://github.com/substack/browserify-handbook#browser-field.

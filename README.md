@@ -118,7 +118,7 @@ To get accomodated to the library I recommend embedding the following snippet to
 
 In the index.js (or whereever you want to require cluster-painter), you can invoke the **clusterPainter** object, like this:
   
-```js
+```javascript
 		var cluster = new ClusterPainter({
 								   source: "cluster.json",	
 								   css_class: "standard",
@@ -137,7 +137,7 @@ The full code of the index.js, file could look like this. Here the interaction p
 However, invoking the **clusterPainter** is easy, you just have to pass a paint command and then the id of the image cluster
 
  
-```html 
+```javascript 
 	/*jslint vars: true, plusplus: true, devel: true, nomen: true, indent: 4, maxerr: 50 */ /*global define */
 	var $               = require('jquery');
 	var ClusterPainter  = require('cluster-painter');
@@ -178,7 +178,7 @@ However, invoking the **clusterPainter** is easy, you just have to pass a paint 
 
 If you want to change the dislay type, you write:
 
-```html
+```javascript
    	cluster.paint[id]
 ```
 

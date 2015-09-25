@@ -1,6 +1,6 @@
 {
   "name": "cluster-painter",
-  "version": "0.0.9",
+  "version": "1.0.1",
   "description": "a fast library to display image clusters",
   "main": "npm_lib/clusterPainter.js",
   "directories": {

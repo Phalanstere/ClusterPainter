@@ -479,7 +479,7 @@ this.position_film = function(job) {
 } ;
   
   
- this.position_default = function(job) {
+this.position_default = function(job) {
 
     var ratio   = job.img.width/job.img.height,
         size    = job.img.width*job.img.height,
@@ -495,6 +495,8 @@ this.position_film = function(job) {
         no,
         left, 
         top,
+        h,
+        w,
         md, 
         hct = 0, // horizontal counter
         vct = 0; // vertical lines
@@ -536,6 +538,15 @@ this.position_film = function(job) {
         };        
 
    self.greensock_event(e1);   
+ 
+    h = parseInt ( $("#" + job.time).css("height"), 10);     
+    w = parseInt ( $("#" + job.time).css("width"), 10);            
+               
+    $("#" + job.time).attr("l", left);
+    $("#" + job.time).attr("t", top);
+    $("#" + job.time).attr("w", w);
+    $("#" + job.time).attr("h", h);
+ 
      
    return null; 
      

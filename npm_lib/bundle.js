@@ -9,7 +9,7 @@ var $               = require('jquery');
 var ClusterPainter  = require('./npm_lib/clusterPainter.js');
 
 
- /*   
+  
     $(document).ready(function(){
         "use strict";
         var gesamt;
@@ -39,7 +39,7 @@ var ClusterPainter  = require('./npm_lib/clusterPainter.js');
 
     });
     
-*/
+
 },{"./npm_lib/clusterPainter.js":9,"jquery":7}],4:[function(require,module,exports){
 'use strict';
 // For more information about browser field, check out the browser field at https://github.com/substack/browserify-handbook#browser-field.
@@ -34420,7 +34420,7 @@ this.position_film = function(job) {
 } ;
   
   
- this.position_default = function(job) {
+this.position_default = function(job) {
 
     var ratio   = job.img.width/job.img.height,
         size    = job.img.width*job.img.height,
@@ -34436,6 +34436,8 @@ this.position_film = function(job) {
         no,
         left, 
         top,
+        h,
+        w,
         md, 
         hct = 0, // horizontal counter
         vct = 0; // vertical lines
@@ -34462,21 +34464,11 @@ this.position_film = function(job) {
         top = ((imgSize.height+offsetY) *vct) + offsetY; 
         hct ++;
         }
-      
-    e = {
-        div: job.img.id,
-        duration: 0,
-        left: self.outside_screen("horizontal"),
-        top: self.outside_screen("vertical"),
-        };      
-   
-    self.greensock_event(e);  
-   
-    // now the animation    
+
    
     e1 = {
         div: job.img.id,
-        duration: 1000,
+        duration: 0,
         width: imgSize.width,
         opacity: 0,
         left: left,
@@ -34486,20 +34478,21 @@ this.position_film = function(job) {
         delay: Math.random() * 1400,
         };        
 
-  
-   $("#" + job.img.id).attr("l", left); 
-   $("#" + job.img.id).attr("t", top);  
-   $("#" + job.img.id).attr("h", imgSize.width/ratio);     
-   $("#" + job.img.id).attr("w", imgSize.width);     
-  
-   var data = self.greensock_data([e1]);                
-    
-   // here I return the animation
-   return data;
-    
-    
-    
+   self.greensock_event(e1);   
+ 
+    h = parseInt ( $("#" + job.time).css("height"), 10);     
+    w = parseInt ( $("#" + job.time).css("width"), 10);            
+               
+    $("#" + job.time).attr("l", left);
+    $("#" + job.time).attr("t", top);
+    $("#" + job.time).attr("w", w);
+    $("#" + job.time).attr("h", h);
+ 
+     
+   return null; 
+     
  };
+ 
 
 this.position_carousel = function(job) {
      var e;

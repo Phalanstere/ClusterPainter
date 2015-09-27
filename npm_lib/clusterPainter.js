@@ -1,4 +1,6 @@
 /*jslint vars: true, plusplus: true, devel: true, nomen: true, indent: 4, maxerr: 50 */ /*global define */
+// version 1.1.14
+
 var $               = require('jquery');
 require('jquery-ui');
 require('gsap');
@@ -537,16 +539,19 @@ this.position_default = function(job) {
         delay: Math.random() * 1400,
         };        
 
-   self.greensock_event(e1);   
+
  
-    h = parseInt ( $("#" + job.time).css("height"), 10);     
-    w = parseInt ( $("#" + job.time).css("width"), 10);            
+    w = imgSize.width;
+    h = imgSize.height;
+
+    console.log("width " + w + " height " + h);           
                
     $("#" + job.time).attr("l", left);
     $("#" + job.time).attr("t", top);
     $("#" + job.time).attr("w", w);
     $("#" + job.time).attr("h", h);
  
+   self.greensock_event(e1);   
      
    return null; 
      

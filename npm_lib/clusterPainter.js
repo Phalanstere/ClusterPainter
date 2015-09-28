@@ -819,6 +819,16 @@ this.position_carousel = function(job) {
       self.square = self.width*self.height;
       self.ratio  = self.width/self.height;  
 
+      var d = document.getElementById("scenery");
+
+      window.onresize=function(){
+        self.width = parseInt( $("#scenery").css("width"), 10),
+        self.height = parseInt( $("#scenery").css("height"), 10);
+        self.square = self.width*self.height;
+        self.ratio  = self.width/self.height;
+        };
+
+
       if (params.source)
         {
         if (typeof(params.source) === "string") 
